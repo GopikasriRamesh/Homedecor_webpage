@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/output.css">
-
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Homedecor</title>
-</head>
-<body class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
-    <nav class="mx-auto p-4 bg-amber-400">
-        <div class="container mx-auto flex items-center justify-between">
-            <a href="/" class="focus:outline-none focus-visisbility:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity" aria-lable="go to homepage">
-                <img src="./assets/logo.svg" width="200" class="w-48 md:w-64 lg:w-72" alt="home smart logo">
-            </a>
-            <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" aria-expanded="false" aria-label="open menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              </button>
-              <div role="menubar" class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
-                <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400  hover:text-neutral-600 transition-colors lg:mr-auto" href="/">
-                    Home
-                </a>
-                <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/">
-                    Contact
-                </a>
-                <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/">
-                    Login
-                </a>
-                <a role="menuitem" class="py-2 px-6 bg-teal-900 text-white shadow-xl hover:shadow-none trasition:shadow focus:outline-shadow focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400  " href="/">
-                    Sign Up
-                </a>
-            </div>
+    <style>
+      html, body {
+        overflow-x: hidden !important;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
+    <nav class="mx-auto p-4 bg-amber-400 overflow-hidden">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="/" class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity" aria-label="go to homepage">
+          <img src="./assets/logo.svg" class="w-48 md:w-64 lg:w-72" alt="home smart logo" />
+        </a>
+        <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" aria-expanded="false" aria-label="open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+        <div role="menubar" class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center overflow-x-hidden lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
+          <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors lg:mr-auto" href="/">Home</a>
+          <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/">Contact</a>
+          <a role="menuitem" class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="/login">Login</a>
+          <a role="menuitem" class="py-2 px-6 bg-teal-900 text-white shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400" href="/signup">Sign Up</a>
         </div>
+      </div>
     </nav>
     <header class="relative pt-16 md:pt-24 lg:pt-48">
         <div class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"></div>
@@ -49,8 +45,7 @@
           </a>
         <section aria-labelledby="qualities" class="realtive">
             <img src="./assets/dots.svg" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7" alt="dots" aria-hidden="true">
-            <img src="./assets/dots.svg" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-24 xl:-right-7" alt="dots" aria-hidden="true">
-
+            <img src="./assets/dots.svg" class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-0 max-w-[150px] object-contain" alt="dots" aria-hidden="true">
             <h2 id="qualities" class="sr-only">Our qualities</h2>
             <div class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between">
                 <div class="grid gap-4 justify-items-center text-center md;flex-1">
@@ -210,7 +205,7 @@
                     </svg>
                     <span>Download the App</span>
                   </a>
-                  <img src="./assets/app.svg" alt="app" width="240" class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs">
+                  <img src="./assets/app.svg" alt="app" width="240" class="md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16 xl:max-w-xs">
                   <div 
                     class="
                       absolute
@@ -396,6 +391,28 @@
               </form>
               </div>
             </section>
+            <footer class="bg-amber-400 text-black py-6 mt-10">
+              <div class="container mx-auto px-4">
+            
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-6">
+                  <div class="flex-shrink-0">
+                    <img src="./assets/logo.svg" alt="HomeDecor logo" class="h-8 md:h-6">
+                  </div>
+                  <ul class="flex uppercase gap-12 text-xs mb-8 mt-8">
+                    <li class="cursor-pointer text-black font-bold">Products</li>
+                    <li class="cursor-pointer text-black font-bold">Design</li>
+                    <li class="cursor-pointer text-black font-bold">Contact</li>
+                  </ul>
+                </div>
+            
+                <!-- Copyright -->
+                <div class="mt-4 text-sm text-center md:text-left mb:10 mt:10">
+                  <p>&copy; 2025 HomeDecor. All rights reserved.</p>
+                </div>
+            
+              </div>
+            </footer>
+            
  
     <script type="module" src="/main.js"></script>
 </body>
